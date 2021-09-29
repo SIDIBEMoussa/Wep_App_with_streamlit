@@ -5,7 +5,7 @@ from sklearn import datasets
 import streamlit.components.v1 as components
 from PIL import Image
 components.html("""
-                    <h3 style="text-align: justify;color:rgb(0, 163, 108)">
+                    <h3 style="text-align: center;color:rgb(0, 163, 108)">
                      Flower iris category prediction App </h3>
                      
                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gc
