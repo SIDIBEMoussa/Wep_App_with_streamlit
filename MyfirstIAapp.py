@@ -2,8 +2,17 @@ import streamlit as st
 import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 from sklearn import datasets
+import streamlit.components.v1 as components
+from PIL import Image
+components.html("""
+                    <h3 style="text-align: justify;color:rgb(0, 163, 108)">
+                     Flower iris category prediction App </h3>
+                     
+                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gc
+                     ThHqOVOAE_IsPyWUJRTBNMmG9RCllDeJt8wQ&usqp=CAU" />
+                """
 
-st.title("Flower iris category prediction App")
+                )
 
 st.sidebar.header("Inputs for prediction algorithm")
 
@@ -38,3 +47,11 @@ category_predict=clf.predict(df)
 
 st.subheader("The predicted category for the flower with above characteristics is:")
 st.write(iris.target_names[category_predict])
+
+import streamlit.components.v1 as components
+
+components.html("""
+                    <h2 style="text-align: center"> Data exploration </h2>
+                
+                """
+                )
